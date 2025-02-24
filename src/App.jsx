@@ -5,6 +5,8 @@ import Footer from "./components/Footer/footer";
 import Card from "./components/Card/card";
 import SinglePage from "./components/SinglePage/singlePage";
 import { Outlet } from "react-router-dom";
+import CardAll from "./components/CardAll/CardAll";
+import Hero from "./components/Hero/hero";
 
 function App() {
   const [count, setCount] = useState();
@@ -12,8 +14,8 @@ function App() {
   return (
     <>
       <Navbar />
-      <Card />
-
+      <Hero></Hero>
+      <CardAll />
       <Footer />
     </>
   );
